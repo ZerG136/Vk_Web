@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>settings</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+  </head>
+  <body style="background-color: whitesmoke;">
+    <nav class="navbar" style="background-color: lightgray;">
+      <div class="container-fluid">
+        <a href="./index.html" class="navbar-brand ms-5"><h1 style="color: black;">AskMe</h1></a>
+        <form class="d-flex col-5">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <a href="#" style="all: unset;"><button class="btn btn-outline-success" type="submit">ASK!</button></a>
+        </form>
+        <div class="d-flex gap-2">
+          <img src="../static/img/person-circle.svg" alt="Avatar" class="img-thumbnail m-1" style="height: 45px; width: 45px;">
+          <div class="me-5">
+            <div class="text-start">Username</div>
+            <a href="../templates/settings.html">settings</a>
+            <a href="#">log out</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container align-items-center p-3 content">
+      <header class="d-flex p-4 gap-4 align-items-center">
+          <h2>Settings</h2>
+      </header>
+      <section class="container row mb-3 p-3">
+        <div class="col-7 p-3 gap-3">
+          <section>
+            <h3 style="color: red;" class="p-2">Error</h3>
+          </section>
+          <section>
+            <div class="form-group row mb-3">
+              <label for="exampleFormControlInput1" class="col-3">Login</label>
+              <input class="col" type="text" class="form-control col" id="exampleFormControlInput1" placeholder="login" style="border: 1px solid black;">
+              <div class="col-2"></div>
+            </div>
+            <div class="form-group row mb-3">
+              <label for="exampleFormControlInput1" class="col-3">Email</label>
+              <input class="col" type="email" class="form-control col" id="exampleFormControlInput1" placeholder="email" style="border: 1px solid black;">
+              <div class="col-2"></div>
+            </div>
+            <div class="form-group row mb-3">
+              <label for="exampleFormControlInput1" class="col-3">NickName</label>
+              <input class="col" type="text" class="form-control col" id="exampleFormControlInput1" placeholder="nickname" style="border: 1px solid black;">
+              <div class="col-2"></div>
+            </div>
+            <div class="row mb-3">
+              <label for="formFile" class="form-label col-3">Upload avatar</label>
+              <img src="../static/img/person-circle.svg" alt="Avatar" class="img-thumbnail mb-3" style="height: 100px; width: 100px; border: 1px solid black;">
+            </div>
+            <div class="row mb-3">
+              <div class="col-3"></div>
+              <input class="form-control col" type="file" id="formFile", style="border: 1px solid black;">
+              <div class="col-2"></div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-3"></div>
+              <a href="#" class="col" style="all: unset;"><button type="button" class="btn btn-primary mt-3">Save</button></a>
+            </div>
+          </section>
+        </div>
+        <div class="col-2"></div>
+        <div class="col p-2">
+          <section class="mb-4">
+            <h1>Popular tags</h1>
+            <div>
+              <a href="#"><span class="badge bg-primary">tag</span></a>
+              <a href="#"><span class="badge bg-secondary">tag</span></a>
+              <a href="#"><span class="badge bg-success">tag</span></a>
+              <a href="#"><span class="badge bg-danger">tag</span></a>
+              <a href="#"><span class="badge bg-warning">tag</span></a>
+              <a href="#"><span class="badge bg-info">tag</span></a>
+              <a href="#"><span class="badge bg-light">tag</span></a>
+              <a href="#"><span class="badge bg-dark">tag</span></a>
+              <a href="#"><span class="badge bg-primary">tag</span></a>
+              <a href="#"><span class="badge bg-secondary">tag</span></a>
+              <a href="#"><span class="badge bg-success">tag</span></a>
+              <a href="#"><span class="badge bg-danger">tag</span></a>
+            </div>
+          </section>
+          <section>
+            <h1 class="mb-3">Best members</h1>
+            <ul class="list-group-item">
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-2">
+                <a href="#">User 1</a>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-2">
+                <a href="#">User 2</a>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-2">
+                <a href="#">User 3</a>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-2">
+                <a href="#">User 4</a>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-2">
+                <a href="#">User 5</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="../static/js/bootstrap.min.js"></script>
+  </body>
+</html>
